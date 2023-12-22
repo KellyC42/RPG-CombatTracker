@@ -1,4 +1,4 @@
-# Initiative-Tracker
+# RPG-CombatTracker
 Easy tool to keep track of initiative for tabletop RPGs (D&amp;D, Pathfinder, etc).
 
 Allows for keeping track of Initiative, Names, HP, AC, and other information (such as attacks, spell slots, etc). These can be enabled or disabled through the Options tab.
@@ -13,10 +13,9 @@ In order to load the encounter, go to File->Load and select the save file that w
 
 
 ### Download
-Download for Windows:
+Download for Windows: https://github.com/ChloeViolet/RPG-CombatTracker/releases/download/1.0/CombatTracker1.0_Windows.zip
 
-
-Download for Linux:
+Download for Linux: https://github.com/ChloeViolet/RPG-CombatTracker/releases/download/1.0/CombatTracker1.0_Linux.zip
 
 
 Made using Godot Engine (v3.2.2)
