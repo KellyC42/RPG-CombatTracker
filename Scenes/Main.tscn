@@ -1,0 +1,134 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/Neverwinter.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Theme/custom_theme.tres" type="Theme" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Main" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 680.0
+margin_bottom = 620.0
+
+[node name="Menu" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 680.0
+margin_bottom = 20.0
+script = ExtResource( 2 )
+
+[node name="File" type="MenuButton" parent="VBoxContainer/Menu"]
+margin_right = 35.0
+margin_bottom = 20.0
+text = "File"
+flat = false
+
+[node name="Options" type="MenuButton" parent="VBoxContainer/Menu"]
+margin_left = 39.0
+margin_right = 102.0
+margin_bottom = 20.0
+text = "Options"
+flat = false
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 680.0
+margin_bottom = 70.0
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 1 )
+text = "Initiative Tracker"
+align = 1
+
+[node name="Buttons" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 74.0
+margin_right = 680.0
+margin_bottom = 112.0
+theme = ExtResource( 4 )
+
+[node name="Spacer" type="Label" parent="VBoxContainer/Buttons"]
+margin_right = 32.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 32, 10 )
+size_flags_vertical = 0
+
+[node name="Sort" type="Button" parent="VBoxContainer/Buttons"]
+margin_left = 36.0
+margin_right = 98.0
+margin_bottom = 38.0
+text = "Sort"
+
+[node name="Insert" type="Button" parent="VBoxContainer/Buttons"]
+margin_left = 102.0
+margin_right = 185.0
+margin_bottom = 38.0
+text = "Insert"
+
+[node name="Spacer" type="Label" parent="VBoxContainer"]
+margin_top = 116.0
+margin_right = 680.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 0, 10 )
+size_flags_vertical = 0
+
+[node name="Labels" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 134.0
+margin_right = 680.0
+margin_bottom = 148.0
+alignment = 1
+
+[node name="Init" type="Label" parent="VBoxContainer/Labels"]
+margin_left = 83.0
+margin_right = 141.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 58, 0 )
+text = "Init"
+align = 1
+
+[node name="Name" type="Label" parent="VBoxContainer/Labels"]
+margin_left = 145.0
+margin_right = 285.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 140, 0 )
+text = "Name"
+align = 1
+
+[node name="HP" type="Label" parent="VBoxContainer/Labels"]
+margin_left = 289.0
+margin_right = 347.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 58, 0 )
+text = "HP"
+align = 1
+
+[node name="AC" type="Label" parent="VBoxContainer/Labels"]
+margin_left = 351.0
+margin_right = 409.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 58, 0 )
+text = "AC"
+align = 1
+
+[node name="Info" type="Label" parent="VBoxContainer/Labels"]
+margin_left = 413.0
+margin_right = 573.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 160, 0 )
+text = "Info"
+align = 1
+
+[node name="Spacer" type="Label" parent="VBoxContainer/Labels"]
+margin_left = 577.0
+margin_right = 597.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 20, 0 )

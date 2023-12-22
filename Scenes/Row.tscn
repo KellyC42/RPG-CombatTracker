@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Row.gd" type="Script" id=1]
+[ext_resource path="res://Theme/arrowUp.png" type="Texture" id=2]
+[ext_resource path="res://Theme/arrowDown.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=4]
+
+[node name="Row" type="VBoxContainer" groups=[
+"Rows",
+]]
+margin_right = 583.0
+margin_bottom = 62.0
+size_flags_horizontal = 4
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Char" type="HBoxContainer" parent="."]
+margin_right = 583.0
+margin_bottom = 44.0
+
+[node name="Buttons" type="VBoxContainer" parent="Char"]
+margin_right = 30.0
+margin_bottom = 44.0
+
+[node name="ButtonUp" type="Button" parent="Char/Buttons"]
+margin_right = 30.0
+margin_bottom = 20.0
+icon = ExtResource( 2 )
+
+[node name="ButtonDown" type="Button" parent="Char/Buttons"]
+margin_top = 24.0
+margin_right = 30.0
+margin_bottom = 44.0
+icon = ExtResource( 3 )
+
+[node name="Character" parent="Char" instance=ExtResource( 4 )]
+margin_left = 34.0
+margin_right = 524.0
+margin_bottom = 44.0
+
+[node name="Delete" type="Button" parent="Char"]
+margin_left = 528.0
+margin_right = 583.0
+margin_bottom = 44.0
+text = "Delete"
