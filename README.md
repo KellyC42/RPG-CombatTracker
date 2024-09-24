@@ -1,5 +1,5 @@
 # RPG-CombatTracker
-Easy tool to keep track of initiative for tabletop RPGs (D&amp;D, Pathfinder, etc).
+Easy tool to keep track of initiative for tabletop RPGs (D&amp;D, Pathfinder, etc)
 
 Allows for keeping track of Initiative, Names, HP, AC, and other information (such as attacks, spell slots, etc). These can be enabled or disabled through the Options tab.
 
